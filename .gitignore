@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# generated caches; the graded outputs in journal/ ARE committed
+cache/

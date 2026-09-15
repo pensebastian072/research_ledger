@@ -1,0 +1,80 @@
+{
+  "question": "Q-MACRO-02",
+  "as_of": "2026-07-29",
+  "evidence": "C:\\Users\\penas\\macro_gpu_lab\\journal\\runs",
+  "export_days": 20,
+  "date_range": [
+    "2026-07-04",
+    "2026-07-29"
+  ],
+  "min_obs_required": 60,
+  "rows": [
+    {
+      "horizon": 5,
+      "strategy": "long_vol_selective",
+      "n_signal_days": 10,
+      "n_directional": 0,
+      "n_distinct_actions": 1,
+      "actions_seen": [
+        "FLAT"
+      ],
+      "mean_pnl": null,
+      "hit_rate": null,
+      "base_rate": 0.2,
+      "t_nw": null,
+      "verdict": "NO-DATA",
+      "why": "n=0 directional observations, need 60. Exports begin 2026-07-04; this accumulates ~1/trading day. NOTE: only ever emitted FLAT -- a constant call cannot be distinguished from buy-and-hold."
+    },
+    {
+      "horizon": 5,
+      "strategy": "short_spy_overlay",
+      "n_signal_days": 11,
+      "n_directional": 11,
+      "n_distinct_actions": 2,
+      "actions_seen": [
+        "LONG_SPY",
+        "SHORT_SPY"
+      ],
+      "mean_pnl": -0.004333,
+      "hit_rate": 0.2727,
+      "base_rate": 0.1818,
+      "t_nw": -1.568,
+      "verdict": "NO-DATA",
+      "why": "n=11 directional observations, need 60. Exports begin 2026-07-04; this accumulates ~1/trading day."
+    },
+    {
+      "horizon": 21,
+      "strategy": "long_vol_selective",
+      "n_signal_days": 0,
+      "n_directional": 0,
+      "n_distinct_actions": 0,
+      "actions_seen": [],
+      "mean_pnl": null,
+      "hit_rate": null,
+      "base_rate": null,
+      "t_nw": null,
+      "verdict": "NO-DATA",
+      "why": "n=0 directional observations, need 60. Exports begin 2026-07-04; this accumulates ~1/trading day."
+    },
+    {
+      "horizon": 21,
+      "strategy": "short_spy_overlay",
+      "n_signal_days": 0,
+      "n_directional": 0,
+      "n_distinct_actions": 0,
+      "actions_seen": [],
+      "mean_pnl": null,
+      "hit_rate": null,
+      "base_rate": null,
+      "t_nw": null,
+      "verdict": "NO-DATA",
+      "why": "n=0 directional observations, need 60. Exports begin 2026-07-04; this accumulates ~1/trading day."
+    }
+  ],
+  "verdict": "NO-DATA",
+  "caveats": [
+    "the gate scorecards in macro_gpu_lab/journal/scorecards are all dated 2026-07-04 -- the daily task runs shift_export only and never re-gates, so the stored PASS/FAIL verdicts do not refresh.",
+    "this grades the PUBLISHED action, not the model's internal probability; a constant action is flagged because it is indistinguishable from buy-and-hold on this sample.",
+    "a full historical regrade of surprise_shift is possible on the multi-year panel but requires re-running macro_gpu_lab's own model, which is outside this read-only repo -- see proposals/."
+  ]
+}

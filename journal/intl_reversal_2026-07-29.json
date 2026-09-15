@@ -1,0 +1,1320 @@
+{
+  "question": "Q-REL-04",
+  "supersedes": "Q-REL-01",
+  "as_of": "2026-07-29",
+  "family": [
+    "INDA",
+    "EEM",
+    "EWY",
+    "EWJ",
+    "FXI",
+    "VGK",
+    "EWU",
+    "EWG",
+    "EWZ"
+  ],
+  "costs_bps": {
+    "INDA": 0.8,
+    "EEM": 0.87,
+    "EWY": 0.76,
+    "EWJ": 0.71,
+    "FXI": 1.3,
+    "VGK": 0.77,
+    "EWU": 0.89,
+    "EWG": 0.86,
+    "EWZ": 0.65
+  },
+  "cost_sources": {
+    "INDA": "predicted",
+    "EEM": "measured",
+    "EWY": "predicted",
+    "EWJ": "predicted",
+    "FXI": "measured",
+    "VGK": "predicted",
+    "EWU": "predicted",
+    "EWG": "predicted",
+    "EWZ": "predicted"
+  },
+  "n_trials": 8,
+  "rows": [
+    {
+      "label": "basket driver=self z>=0.0",
+      "n": 2510,
+      "n_clusters": 2510,
+      "mean_bps": 5.379,
+      "t_nw": 2.747,
+      "hit_rate": 0.5203,
+      "ann_pct": 13.55,
+      "years_positive": 8,
+      "years_graded": 11,
+      "per_year": {
+        "2016": {
+          "n": 105,
+          "mean_bps": 6.434,
+          "t": 0.86
+        },
+        "2017": {
+          "n": 251,
+          "mean_bps": 3.449,
+          "t": 1.14
+        },
+        "2018": {
+          "n": 251,
+          "mean_bps": -1.09,
+          "t": -0.21
+        },
+        "2019": {
+          "n": 252,
+          "mean_bps": -2.013,
+          "t": -0.51
+        },
+        "2020": {
+          "n": 253,
+          "mean_bps": 24.436,
+          "t": 1.85
+        },
+        "2021": {
+          "n": 252,
+          "mean_bps": 9.569,
+          "t": 2.23
+        },
+        "2022": {
+          "n": 251,
+          "mean_bps": 0.828,
+          "t": 0.13
+        },
+        "2023": {
+          "n": 250,
+          "mean_bps": -2.084,
+          "t": -0.49
+        },
+        "2024": {
+          "n": 252,
+          "mean_bps": 3.681,
+          "t": 0.86
+        },
+        "2025": {
+          "n": 250,
+          "mean_bps": 2.419,
+          "t": 0.5
+        },
+        "2026": {
+          "n": 143,
+          "mean_bps": 20.47,
+          "t": 2.77
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 1.4132,
+        "dsr_shipped": -71.4604,
+        "pbo": 0.0,
+        "profit_factor": 1.2004
+      },
+      "verdict": "YES",
+      "why": "5.379bps/day t=2.747 ann=13.55% years+=8/11",
+      "driver": "self",
+      "z": 0.0,
+      "scope": "basket"
+    },
+    {
+      "label": "basket driver=self z>=1.0",
+      "n": 1882,
+      "n_clusters": 1882,
+      "mean_bps": 6.762,
+      "t_nw": 2.056,
+      "hit_rate": 0.5324,
+      "ann_pct": 17.04,
+      "years_positive": 8,
+      "years_graded": 11,
+      "per_year": {
+        "2016": {
+          "n": 33,
+          "mean_bps": 0.314,
+          "t": 0.01
+        },
+        "2017": {
+          "n": 188,
+          "mean_bps": 9.392,
+          "t": 1.58
+        },
+        "2018": {
+          "n": 200,
+          "mean_bps": 13.278,
+          "t": 1.68
+        },
+        "2019": {
+          "n": 178,
+          "mean_bps": -2.328,
+          "t": -0.28
+        },
+        "2020": {
+          "n": 169,
+          "mean_bps": 25.861,
+          "t": 1.22
+        },
+        "2021": {
+          "n": 199,
+          "mean_bps": 4.587,
+          "t": 0.55
+        },
+        "2022": {
+          "n": 192,
+          "mean_bps": -9.417,
+          "t": -0.82
+        },
+        "2023": {
+          "n": 196,
+          "mean_bps": -0.957,
+          "t": -0.13
+        },
+        "2024": {
+          "n": 215,
+          "mean_bps": 15.518,
+          "t": 1.83
+        },
+        "2025": {
+          "n": 194,
+          "mean_bps": 2.32,
+          "t": 0.26
+        },
+        "2026": {
+          "n": 118,
+          "mean_bps": 13.849,
+          "t": 0.97
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 0.6258,
+        "dsr_shipped": -61.5363,
+        "pbo": 0.0,
+        "profit_factor": 1.1537
+      },
+      "verdict": "YES",
+      "why": "6.762bps/day t=2.056 ann=17.04% years+=8/11",
+      "driver": "self",
+      "z": 1.0,
+      "scope": "basket"
+    },
+    {
+      "label": "basket driver=self z>=1.5",
+      "n": 1138,
+      "n_clusters": 1138,
+      "mean_bps": 14.058,
+      "t_nw": 2.768,
+      "hit_rate": 0.5571,
+      "ann_pct": 35.43,
+      "years_positive": 9,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 125,
+          "mean_bps": 11.725,
+          "t": 1.36
+        },
+        "2018": {
+          "n": 137,
+          "mean_bps": 11.402,
+          "t": 1.02
+        },
+        "2019": {
+          "n": 92,
+          "mean_bps": 0.67,
+          "t": 0.06
+        },
+        "2020": {
+          "n": 92,
+          "mean_bps": 37.977,
+          "t": 1.07
+        },
+        "2021": {
+          "n": 121,
+          "mean_bps": 15.442,
+          "t": 1.2
+        },
+        "2022": {
+          "n": 116,
+          "mean_bps": -11.114,
+          "t": -0.62
+        },
+        "2023": {
+          "n": 115,
+          "mean_bps": 22.808,
+          "t": 2.08
+        },
+        "2024": {
+          "n": 128,
+          "mean_bps": 26.049,
+          "t": 1.58
+        },
+        "2025": {
+          "n": 112,
+          "mean_bps": 6.169,
+          "t": 0.42
+        },
+        "2026": {
+          "n": 81,
+          "mean_bps": 29.032,
+          "t": 1.64
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 1.2813,
+        "dsr_shipped": -45.6768,
+        "pbo": 0.0,
+        "profit_factor": 1.2877
+      },
+      "verdict": "YES",
+      "why": "14.058bps/day t=2.768 ann=35.43% years+=9/10",
+      "driver": "self",
+      "z": 1.5,
+      "scope": "basket"
+    },
+    {
+      "label": "basket driver=self z>=2.0",
+      "n": 527,
+      "n_clusters": 527,
+      "mean_bps": 12.884,
+      "t_nw": 1.416,
+      "hit_rate": 0.5389,
+      "ann_pct": 32.47,
+      "years_positive": 7,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 54,
+          "mean_bps": 1.818,
+          "t": 0.1
+        },
+        "2018": {
+          "n": 67,
+          "mean_bps": 5.33,
+          "t": 0.29
+        },
+        "2019": {
+          "n": 41,
+          "mean_bps": -4.917,
+          "t": -0.25
+        },
+        "2020": {
+          "n": 47,
+          "mean_bps": 66.912,
+          "t": 1.01
+        },
+        "2021": {
+          "n": 52,
+          "mean_bps": 44.453,
+          "t": 2.33
+        },
+        "2022": {
+          "n": 55,
+          "mean_bps": -43.696,
+          "t": -1.59
+        },
+        "2023": {
+          "n": 49,
+          "mean_bps": -0.211,
+          "t": -0.01
+        },
+        "2024": {
+          "n": 60,
+          "mean_bps": 22.861,
+          "t": 1.03
+        },
+        "2025": {
+          "n": 51,
+          "mean_bps": 25.293,
+          "t": 0.85
+        },
+        "2026": {
+          "n": 43,
+          "mean_bps": 28.747,
+          "t": 1.35
+        }
+      },
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.0219,
+        "dsr_shipped": -31.7143,
+        "pbo": 0.1111,
+        "profit_factor": 1.2228
+      },
+      "verdict": "NO",
+      "why": "t=1.416 <= 2, gate: deflated_sharpe_ratio -0.0219 <= 0.0",
+      "driver": "self",
+      "z": 2.0,
+      "scope": "basket"
+    },
+    {
+      "label": "basket driver=SPY z>=0.0",
+      "n": 2505,
+      "n_clusters": 2505,
+      "mean_bps": 5.218,
+      "t_nw": 2.182,
+      "hit_rate": 0.507,
+      "ann_pct": 13.15,
+      "years_positive": 10,
+      "years_graded": 11,
+      "per_year": {
+        "2016": {
+          "n": 105,
+          "mean_bps": 8.453,
+          "t": 0.93
+        },
+        "2017": {
+          "n": 250,
+          "mean_bps": 0.999,
+          "t": 0.24
+        },
+        "2018": {
+          "n": 249,
+          "mean_bps": -4.506,
+          "t": -0.66
+        },
+        "2019": {
+          "n": 252,
+          "mean_bps": 0.636,
+          "t": 0.12
+        },
+        "2020": {
+          "n": 253,
+          "mean_bps": 14.392,
+          "t": 1.01
+        },
+        "2021": {
+          "n": 252,
+          "mean_bps": 7.346,
+          "t": 1.27
+        },
+        "2022": {
+          "n": 250,
+          "mean_bps": 0.279,
+          "t": 0.03
+        },
+        "2023": {
+          "n": 249,
+          "mean_bps": 5.938,
+          "t": 1.03
+        },
+        "2024": {
+          "n": 252,
+          "mean_bps": 5.299,
+          "t": 1.01
+        },
+        "2025": {
+          "n": 250,
+          "mean_bps": 4.485,
+          "t": 0.68
+        },
+        "2026": {
+          "n": 143,
+          "mean_bps": 23.772,
+          "t": 2.24
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 0.7587,
+        "dsr_shipped": -71.3965,
+        "pbo": 0.0,
+        "profit_factor": 1.1368
+      },
+      "verdict": "YES",
+      "why": "5.218bps/day t=2.182 ann=13.15% years+=10/11",
+      "driver": "SPY",
+      "z": 0.0,
+      "scope": "basket"
+    },
+    {
+      "label": "basket driver=SPY z>=1.0",
+      "n": 697,
+      "n_clusters": 697,
+      "mean_bps": 10.331,
+      "t_nw": 1.776,
+      "hit_rate": 0.5151,
+      "ann_pct": 26.04,
+      "years_positive": 8,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 60,
+          "mean_bps": 0.856,
+          "t": 0.09
+        },
+        "2018": {
+          "n": 89,
+          "mean_bps": 12.027,
+          "t": 0.99
+        },
+        "2019": {
+          "n": 56,
+          "mean_bps": 22.597,
+          "t": 1.65
+        },
+        "2020": {
+          "n": 65,
+          "mean_bps": 36.626,
+          "t": 0.83
+        },
+        "2021": {
+          "n": 79,
+          "mean_bps": 3.271,
+          "t": 0.29
+        },
+        "2022": {
+          "n": 82,
+          "mean_bps": -5.229,
+          "t": -0.33
+        },
+        "2023": {
+          "n": 73,
+          "mean_bps": -11.747,
+          "t": -1.34
+        },
+        "2024": {
+          "n": 76,
+          "mean_bps": 6.672,
+          "t": 0.69
+        },
+        "2025": {
+          "n": 63,
+          "mean_bps": 13.522,
+          "t": 0.67
+        },
+        "2026": {
+          "n": 44,
+          "mean_bps": 38.297,
+          "t": 2.26
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 0.3997,
+        "dsr_shipped": -37.1904,
+        "pbo": 0.0119,
+        "profit_factor": 1.246
+      },
+      "verdict": "NO",
+      "why": "t=1.776 <= 2",
+      "driver": "SPY",
+      "z": 1.0,
+      "scope": "basket"
+    },
+    {
+      "label": "basket driver=SPY z>=1.5",
+      "n": 341,
+      "n_clusters": 341,
+      "mean_bps": 17.263,
+      "t_nw": 1.74,
+      "hit_rate": 0.5396,
+      "ann_pct": 43.5,
+      "years_positive": 5,
+      "years_graded": 9,
+      "per_year": {
+        "2017": {
+          "n": 33,
+          "mean_bps": 19.669,
+          "t": 1.36
+        },
+        "2018": {
+          "n": 46,
+          "mean_bps": 17.593,
+          "t": 0.96
+        },
+        "2020": {
+          "n": 44,
+          "mean_bps": 77.871,
+          "t": 1.32
+        },
+        "2021": {
+          "n": 35,
+          "mean_bps": 1.328,
+          "t": 0.08
+        },
+        "2022": {
+          "n": 41,
+          "mean_bps": -16.873,
+          "t": -0.7
+        },
+        "2023": {
+          "n": 31,
+          "mean_bps": -9.307,
+          "t": -0.88
+        },
+        "2024": {
+          "n": 38,
+          "mean_bps": -0.987,
+          "t": -0.07
+        },
+        "2025": {
+          "n": 32,
+          "mean_bps": -16.448,
+          "t": -0.57
+        },
+        "2026": {
+          "n": 20,
+          "mean_bps": 45.286,
+          "t": 1.81
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 0.3915,
+        "dsr_shipped": -25.6498,
+        "pbo": 0.0952,
+        "profit_factor": 1.3964
+      },
+      "verdict": "NO",
+      "why": "t=1.74 <= 2",
+      "driver": "SPY",
+      "z": 1.5,
+      "scope": "basket"
+    },
+    {
+      "label": "basket driver=SPY z>=2.0",
+      "n": 143,
+      "n_clusters": 143,
+      "mean_bps": 25.615,
+      "t_nw": 1.365,
+      "hit_rate": 0.5874,
+      "ann_pct": 64.55,
+      "years_positive": 1,
+      "years_graded": 1,
+      "per_year": {
+        "2020": {
+          "n": 24,
+          "mean_bps": 115.751,
+          "t": 1.29
+        }
+      },
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.0457,
+        "dsr_shipped": -16.2567,
+        "pbo": 0.1984,
+        "profit_factor": 1.5091
+      },
+      "verdict": "NO",
+      "why": "t=1.365 <= 2, gate: deflated_sharpe_ratio -0.0457 <= 0.0, only 1/1 years positive, need 5",
+      "driver": "SPY",
+      "z": 2.0,
+      "scope": "basket"
+    }
+  ],
+  "per_symbol": [
+    {
+      "label": "INDA self z>=1.0",
+      "n": 708,
+      "n_clusters": 708,
+      "mean_bps": 14.488,
+      "t_nw": 2.211,
+      "hit_rate": 0.5198,
+      "ann_pct": 36.51,
+      "years_positive": 8,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 75,
+          "mean_bps": 10.635,
+          "t": 1.08
+        },
+        "2018": {
+          "n": 86,
+          "mean_bps": 12.381,
+          "t": 0.76
+        },
+        "2019": {
+          "n": 47,
+          "mean_bps": 22.526,
+          "t": 1.26
+        },
+        "2020": {
+          "n": 65,
+          "mean_bps": 73.508,
+          "t": 1.35
+        },
+        "2021": {
+          "n": 73,
+          "mean_bps": 10.132,
+          "t": 0.77
+        },
+        "2022": {
+          "n": 86,
+          "mean_bps": 16.524,
+          "t": 1.09
+        },
+        "2023": {
+          "n": 81,
+          "mean_bps": -4.378,
+          "t": -0.6
+        },
+        "2024": {
+          "n": 64,
+          "mean_bps": 14.75,
+          "t": 1.03
+        },
+        "2025": {
+          "n": 74,
+          "mean_bps": -10.149,
+          "t": -1.22
+        },
+        "2026": {
+          "n": 46,
+          "mean_bps": 12.02,
+          "t": 0.67
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 0.9308,
+        "dsr_shipped": -38.354,
+        "pbo": 0.0,
+        "profit_factor": 1.3416
+      },
+      "verdict": "YES",
+      "why": "14.488bps/day t=2.211 ann=36.51% years+=8/10",
+      "symbol": "INDA",
+      "cost_bps": 0.8,
+      "cost_source": "predicted"
+    },
+    {
+      "label": "EEM self z>=1.0",
+      "n": 726,
+      "n_clusters": 726,
+      "mean_bps": 9.736,
+      "t_nw": 1.697,
+      "hit_rate": 0.5207,
+      "ann_pct": 24.53,
+      "years_positive": 6,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 71,
+          "mean_bps": 3.638,
+          "t": 0.38
+        },
+        "2018": {
+          "n": 94,
+          "mean_bps": 12.253,
+          "t": 0.92
+        },
+        "2019": {
+          "n": 65,
+          "mean_bps": -9.425,
+          "t": -0.72
+        },
+        "2020": {
+          "n": 74,
+          "mean_bps": 47.131,
+          "t": 1.26
+        },
+        "2021": {
+          "n": 70,
+          "mean_bps": 20.518,
+          "t": 1.69
+        },
+        "2022": {
+          "n": 78,
+          "mean_bps": -0.823,
+          "t": -0.05
+        },
+        "2023": {
+          "n": 78,
+          "mean_bps": -1.978,
+          "t": -0.19
+        },
+        "2024": {
+          "n": 71,
+          "mean_bps": 14.251,
+          "t": 1.21
+        },
+        "2025": {
+          "n": 64,
+          "mean_bps": -2.527,
+          "t": -0.12
+        },
+        "2026": {
+          "n": 51,
+          "mean_bps": 22.1,
+          "t": 1.19
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 0.3087,
+        "dsr_shipped": -38.2045,
+        "pbo": 0.0,
+        "profit_factor": 1.2166
+      },
+      "verdict": "NO",
+      "why": "t=1.697 <= 2",
+      "symbol": "EEM",
+      "cost_bps": 0.87,
+      "cost_source": "measured"
+    },
+    {
+      "label": "EWY self z>=1.0",
+      "n": 757,
+      "n_clusters": 757,
+      "mean_bps": 14.686,
+      "t_nw": 1.947,
+      "hit_rate": 0.535,
+      "ann_pct": 37.01,
+      "years_positive": 6,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 69,
+          "mean_bps": -0.515,
+          "t": -0.06
+        },
+        "2018": {
+          "n": 90,
+          "mean_bps": 20.965,
+          "t": 1.27
+        },
+        "2019": {
+          "n": 74,
+          "mean_bps": -8.395,
+          "t": -0.61
+        },
+        "2020": {
+          "n": 85,
+          "mean_bps": 58.87,
+          "t": 1.5
+        },
+        "2021": {
+          "n": 79,
+          "mean_bps": 14.788,
+          "t": 0.94
+        },
+        "2022": {
+          "n": 83,
+          "mean_bps": -5.71,
+          "t": -0.31
+        },
+        "2023": {
+          "n": 73,
+          "mean_bps": -9.843,
+          "t": -0.58
+        },
+        "2024": {
+          "n": 66,
+          "mean_bps": 16.536,
+          "t": 0.73
+        },
+        "2025": {
+          "n": 77,
+          "mean_bps": 33.471,
+          "t": 1.43
+        },
+        "2026": {
+          "n": 55,
+          "mean_bps": 26.848,
+          "t": 0.6
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 0.5273,
+        "dsr_shipped": -38.3925,
+        "pbo": 0.0675,
+        "profit_factor": 1.2414
+      },
+      "verdict": "NO",
+      "why": "t=1.947 <= 2",
+      "symbol": "EWY",
+      "cost_bps": 0.76,
+      "cost_source": "predicted"
+    },
+    {
+      "label": "EWJ self z>=1.0",
+      "n": 709,
+      "n_clusters": 709,
+      "mean_bps": 8.754,
+      "t_nw": 1.89,
+      "hit_rate": 0.536,
+      "ann_pct": 22.06,
+      "years_positive": 8,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 69,
+          "mean_bps": -4.263,
+          "t": -0.59
+        },
+        "2018": {
+          "n": 83,
+          "mean_bps": -2.962,
+          "t": -0.25
+        },
+        "2019": {
+          "n": 60,
+          "mean_bps": 20.36,
+          "t": 1.95
+        },
+        "2020": {
+          "n": 68,
+          "mean_bps": 17.42,
+          "t": 0.68
+        },
+        "2021": {
+          "n": 73,
+          "mean_bps": 10.476,
+          "t": 0.91
+        },
+        "2022": {
+          "n": 83,
+          "mean_bps": 4.561,
+          "t": 0.31
+        },
+        "2023": {
+          "n": 73,
+          "mean_bps": 10.867,
+          "t": 0.94
+        },
+        "2024": {
+          "n": 75,
+          "mean_bps": 0.436,
+          "t": 0.04
+        },
+        "2025": {
+          "n": 65,
+          "mean_bps": 9.503,
+          "t": 0.59
+        },
+        "2026": {
+          "n": 44,
+          "mean_bps": 26.727,
+          "t": 1.21
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 0.3504,
+        "dsr_shipped": -36.035,
+        "pbo": 0.0,
+        "profit_factor": 1.2239
+      },
+      "verdict": "NO",
+      "why": "t=1.89 <= 2",
+      "symbol": "EWJ",
+      "cost_bps": 0.71,
+      "cost_source": "predicted"
+    },
+    {
+      "label": "FXI self z>=1.0",
+      "n": 692,
+      "n_clusters": 692,
+      "mean_bps": 13.018,
+      "t_nw": 1.768,
+      "hit_rate": 0.5332,
+      "ann_pct": 32.8,
+      "years_positive": 6,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 77,
+          "mean_bps": 0.069,
+          "t": 0.01
+        },
+        "2018": {
+          "n": 90,
+          "mean_bps": 25.414,
+          "t": 1.72
+        },
+        "2019": {
+          "n": 68,
+          "mean_bps": -2.977,
+          "t": -0.21
+        },
+        "2020": {
+          "n": 56,
+          "mean_bps": 62.93,
+          "t": 1.52
+        },
+        "2021": {
+          "n": 78,
+          "mean_bps": 27.531,
+          "t": 1.39
+        },
+        "2022": {
+          "n": 71,
+          "mean_bps": -18.376,
+          "t": -0.58
+        },
+        "2023": {
+          "n": 70,
+          "mean_bps": 27.391,
+          "t": 1.26
+        },
+        "2024": {
+          "n": 74,
+          "mean_bps": 33.046,
+          "t": 1.13
+        },
+        "2025": {
+          "n": 59,
+          "mean_bps": -21.46,
+          "t": -1.02
+        },
+        "2026": {
+          "n": 41,
+          "mean_bps": -13.59,
+          "t": -0.72
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 0.2838,
+        "dsr_shipped": -36.2758,
+        "pbo": 0.0,
+        "profit_factor": 1.2156
+      },
+      "verdict": "NO",
+      "why": "t=1.768 <= 2",
+      "symbol": "FXI",
+      "cost_bps": 1.3,
+      "cost_source": "measured"
+    },
+    {
+      "label": "VGK self z>=1.0",
+      "n": 709,
+      "n_clusters": 709,
+      "mean_bps": 2.272,
+      "t_nw": 0.428,
+      "hit_rate": 0.5035,
+      "ann_pct": 5.73,
+      "years_positive": 7,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 66,
+          "mean_bps": 11.374,
+          "t": 1.91
+        },
+        "2018": {
+          "n": 83,
+          "mean_bps": 0.73,
+          "t": 0.07
+        },
+        "2019": {
+          "n": 60,
+          "mean_bps": 3.606,
+          "t": 0.31
+        },
+        "2020": {
+          "n": 67,
+          "mean_bps": 31.321,
+          "t": 0.79
+        },
+        "2021": {
+          "n": 72,
+          "mean_bps": -0.335,
+          "t": -0.03
+        },
+        "2022": {
+          "n": 79,
+          "mean_bps": -21.891,
+          "t": -1.27
+        },
+        "2023": {
+          "n": 75,
+          "mean_bps": 0.486,
+          "t": 0.04
+        },
+        "2024": {
+          "n": 81,
+          "mean_bps": 1.982,
+          "t": 0.24
+        },
+        "2025": {
+          "n": 68,
+          "mean_bps": -17.484,
+          "t": -1.09
+        },
+        "2026": {
+          "n": 44,
+          "mean_bps": 21.149,
+          "t": 1.36
+        }
+      },
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -1.0319,
+        "dsr_shipped": -38.317,
+        "pbo": 0.3452,
+        "profit_factor": 1.0522
+      },
+      "verdict": "NO",
+      "why": "t=0.428 <= 2, gate: deflated_sharpe_ratio -1.0319 <= 0.0",
+      "symbol": "VGK",
+      "cost_bps": 0.77,
+      "cost_source": "predicted"
+    },
+    {
+      "label": "EWU self z>=1.0",
+      "n": 674,
+      "n_clusters": 674,
+      "mean_bps": 7.71,
+      "t_nw": 1.343,
+      "hit_rate": 0.5252,
+      "ann_pct": 19.43,
+      "years_positive": 7,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 64,
+          "mean_bps": 10.522,
+          "t": 1.79
+        },
+        "2018": {
+          "n": 80,
+          "mean_bps": 4.378,
+          "t": 0.37
+        },
+        "2019": {
+          "n": 58,
+          "mean_bps": -22.256,
+          "t": -1.95
+        },
+        "2020": {
+          "n": 61,
+          "mean_bps": 53.433,
+          "t": 1.22
+        },
+        "2021": {
+          "n": 65,
+          "mean_bps": -0.023,
+          "t": -0.0
+        },
+        "2022": {
+          "n": 73,
+          "mean_bps": 9.033,
+          "t": 0.44
+        },
+        "2023": {
+          "n": 68,
+          "mean_bps": 1.203,
+          "t": 0.1
+        },
+        "2024": {
+          "n": 84,
+          "mean_bps": 6.124,
+          "t": 0.8
+        },
+        "2025": {
+          "n": 66,
+          "mean_bps": -15.139,
+          "t": -0.86
+        },
+        "2026": {
+          "n": 44,
+          "mean_bps": 35.509,
+          "t": 2.09
+        }
+      },
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.0784,
+        "dsr_shipped": -36.224,
+        "pbo": 0.0754,
+        "profit_factor": 1.1887
+      },
+      "verdict": "NO",
+      "why": "t=1.343 <= 2, gate: deflated_sharpe_ratio -0.0784 <= 0.0",
+      "symbol": "EWU",
+      "cost_bps": 0.89,
+      "cost_source": "predicted"
+    },
+    {
+      "label": "EWG self z>=1.0",
+      "n": 712,
+      "n_clusters": 712,
+      "mean_bps": 4.723,
+      "t_nw": 0.85,
+      "hit_rate": 0.5098,
+      "ann_pct": 11.9,
+      "years_positive": 6,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 59,
+          "mean_bps": 7.182,
+          "t": 0.94
+        },
+        "2018": {
+          "n": 82,
+          "mean_bps": -2.397,
+          "t": -0.17
+        },
+        "2019": {
+          "n": 59,
+          "mean_bps": 7.503,
+          "t": 0.66
+        },
+        "2020": {
+          "n": 68,
+          "mean_bps": 56.792,
+          "t": 1.65
+        },
+        "2021": {
+          "n": 76,
+          "mean_bps": 1.392,
+          "t": 0.11
+        },
+        "2022": {
+          "n": 79,
+          "mean_bps": -24.36,
+          "t": -1.11
+        },
+        "2023": {
+          "n": 77,
+          "mean_bps": -6.913,
+          "t": -0.53
+        },
+        "2024": {
+          "n": 87,
+          "mean_bps": 10.561,
+          "t": 1.07
+        },
+        "2025": {
+          "n": 67,
+          "mean_bps": -13.533,
+          "t": -0.82
+        },
+        "2026": {
+          "n": 49,
+          "mean_bps": 20.169,
+          "t": 1.22
+        }
+      },
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.6251,
+        "dsr_shipped": -37.7714,
+        "pbo": 0.3135,
+        "profit_factor": 1.1011
+      },
+      "verdict": "NO",
+      "why": "t=0.85 <= 2, gate: deflated_sharpe_ratio -0.6251 <= 0.0",
+      "symbol": "EWG",
+      "cost_bps": 0.86,
+      "cost_source": "predicted"
+    },
+    {
+      "label": "EWZ self z>=1.0",
+      "n": 705,
+      "n_clusters": 705,
+      "mean_bps": 22.521,
+      "t_nw": 2.154,
+      "hit_rate": 0.5348,
+      "ann_pct": 56.75,
+      "years_positive": 8,
+      "years_graded": 10,
+      "per_year": {
+        "2017": {
+          "n": 68,
+          "mean_bps": 52.974,
+          "t": 1.68
+        },
+        "2018": {
+          "n": 82,
+          "mean_bps": 50.211,
+          "t": 2.34
+        },
+        "2019": {
+          "n": 66,
+          "mean_bps": 11.474,
+          "t": 0.52
+        },
+        "2020": {
+          "n": 70,
+          "mean_bps": 113.685,
+          "t": 1.5
+        },
+        "2021": {
+          "n": 69,
+          "mean_bps": 56.105,
+          "t": 2.66
+        },
+        "2022": {
+          "n": 87,
+          "mean_bps": -51.495,
+          "t": -2.16
+        },
+        "2023": {
+          "n": 68,
+          "mean_bps": -11.504,
+          "t": -0.66
+        },
+        "2024": {
+          "n": 80,
+          "mean_bps": 8.998,
+          "t": 0.5
+        },
+        "2025": {
+          "n": 63,
+          "mean_bps": 10.866,
+          "t": 0.56
+        },
+        "2026": {
+          "n": 41,
+          "mean_bps": 11.872,
+          "t": 0.44
+        }
+      },
+      "gate": {
+        "passes": true,
+        "dsr_fixed": 0.8253,
+        "dsr_shipped": -37.1649,
+        "pbo": 0.0397,
+        "profit_factor": 1.3169
+      },
+      "verdict": "YES",
+      "why": "22.521bps/day t=2.154 ann=56.75% years+=8/10",
+      "symbol": "EWZ",
+      "cost_bps": 0.65,
+      "cost_source": "predicted"
+    }
+  ],
+  "best": {
+    "label": "basket driver=SPY z>=2.0",
+    "n": 143,
+    "n_clusters": 143,
+    "mean_bps": 25.615,
+    "t_nw": 1.365,
+    "hit_rate": 0.5874,
+    "ann_pct": 64.55,
+    "years_positive": 1,
+    "years_graded": 1,
+    "per_year": {
+      "2020": {
+        "n": 24,
+        "mean_bps": 115.751,
+        "t": 1.29
+      }
+    },
+    "gate": {
+      "passes": false,
+      "dsr_fixed": -0.0457,
+      "dsr_shipped": -16.2567,
+      "pbo": 0.1984,
+      "profit_factor": 1.5091
+    },
+    "verdict": "NO",
+    "why": "t=1.365 <= 2, gate: deflated_sharpe_ratio -0.0457 <= 0.0, only 1/1 years positive, need 5",
+    "driver": "SPY",
+    "z": 2.0,
+    "scope": "basket"
+  },
+  "verdict": "YES",
+  "caveats": [
+    "this is a MICROSTRUCTURE effect, not a macro relationship -- it lives in the ETF's premium/discount to NAV and is the kind of thing authorised participants arbitrage. Quoted spread is a floor on the cost of competing with them, and market impact is not modelled at all.",
+    "the reversal requires trading at or near the close every day it fires; closing-auction execution is assumed and never verified here.",
+    "costs are a per-symbol level from 12 sampled 2025-2026 sessions applied across 2016-2026. Spreads were wider earlier and much wider in 2020, so the early years are undercharged.",
+    "the z thresholds and both drivers were pre-registered before this ran; n_trials charges the whole grid."
+  ]
+}

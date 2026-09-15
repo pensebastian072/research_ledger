@@ -1,0 +1,55 @@
+{
+  "question": "Q-NEWS-02",
+  "as_of": "2026-07-29",
+  "evidence": "C:\\Users\\penas\\hq-trading-system\\journal\\macro\\model_vs_news",
+  "raw_rows": 33036,
+  "result": {
+    "n_daily_rows": 282,
+    "n_days": 29,
+    "assets": [
+      "BTC",
+      "COPPER",
+      "EM",
+      "EQUITY_US",
+      "EURUSD",
+      "GBPUSD",
+      "GOLD",
+      "OIL",
+      "USDCAD",
+      "USDJPY"
+    ],
+    "horizons": {
+      "1": {
+        "n_graded": 168,
+        "model_hit_rate": 0.4118,
+        "news_hit_rate": 0.4667,
+        "base_rate": 0.4702,
+        "n_divergences": 43,
+        "model_hit_on_divergence": 0.4186,
+        "news_hit_on_divergence": 0.5814,
+        "verdict": "NEWS",
+        "why": "on divergence: news 0.5814 vs model 0.4186"
+      },
+      "5": {
+        "n_graded": 128,
+        "model_hit_rate": 0.4711,
+        "news_hit_rate": 0.5156,
+        "base_rate": 0.5391,
+        "n_divergences": 40,
+        "model_hit_on_divergence": 0.35,
+        "news_hit_on_divergence": 0.65,
+        "verdict": "NEWS",
+        "why": "on divergence: news 0.65 vs model 0.35"
+      }
+    },
+    "fires_rate": 0.539,
+    "model_zero_rate": 0.117,
+    "news_zero_rate": 0.4007,
+    "n_fires": 152
+  },
+  "caveats": [
+    "model_vs_news never graded outcomes itself -- its docstring promised 'which one the tape later proved right' and no code implements it. This grader supplies that, from outside HQ.",
+    "intraday snapshots are collapsed to one modal sign per (date, asset) so a 5-minute loop does not inflate n by ~288x.",
+    "the LLM behind these rows is hq's llm_macro_analyst prompt over veto_flag.json -- a DIFFERENT model from the finbert scores graded in graders.news_ic. Do not pool the two verdicts."
+  ]
+}

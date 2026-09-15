@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block title %}research_ledger &mdash; registered questions{% endblock %}
+{% block content %}
+      <div class="card mb-2">
+        <div class="card-header">
+          <h3 class="card-title">Registered questions</h3>
+          <span class="card-subtitle ms-2 text-muted" id="rlSummary">loading&hellip;</span>
+        </div>
+        <div class="card-body py-2">
+          <div class="text-muted small">
+            Each question's <strong>pass bar was frozen at registration</strong>, before its
+            grader ran. A result never edits the bar it was tested against &mdash; moving a
+            bar to fit a number is the failure mode this ledger exists to catch.
+          </div>
+          <div class="text-muted small mt-2">
+            <strong>NO is a first-class answer</strong>, and so is
+            <span class="mono">NO-DATA</span>. Questions that have not accumulated enough
+            observations are held <span class="mono">OPEN</span> with the date they are
+            expected to become answerable, rather than being graded early or quietly
+            dropped. Every verdict carries a number and an as-of date.
+          </div>
+          <div class="mt-2" id="rlCounts"></div>
+        </div>
+      </div>
+
+      <div id="rlGroups"></div>
+{% endblock %}
+{% block scripts %}
+<script>
+const STATUS_CLASS = {
+  'NO':'bg-red', 'NO-SUPERSEDED':'bg-red',
+  'ANSWERED':'bg-green', 'RESOLVED':'bg-green', 'FIXED':'bg-green',
+  'CONCERN-NOT-SUPPORTED':'bg-teal', 'REAL-BUT-NOT-SIGNIFICANT':'bg-teal',
+  'NEWS-PROVISIONAL':'bg-orange', 'NO-DATA':'bg-orange',
+  'OPEN':'bg-secondary', 'OPEN-POLICY':'bg-secondary'
+};
+const BUCKET_TITLE = {
+  settled:'Settled', provisional:'Provisional / not enough data',
+  open:'Open &mdash; accumulating', other:'Other'
+};
+
+function statusBadge(s){
+  return `<span class="badge ${STATUS_CLASS[s]||'bg-secondary'}">${esc(s)}</span>`;
+}
+
+function card(r){
+  const prereg = r.registration === 'pre-registered';
+  return `
+  <div class="card mb-2">
+    <div class="card-header py-2">
+      <h3 class="card-title mono">${esc(r.id)}</h3>
+      <span class="ms-2">${statusBadge(r.status)}</span>
+      <span class="card-subtitle ms-auto text-muted small">
+        <span class="mono">${esc(r.repo||'?')}</span>
+        &middot; <span class="${prereg?'text-green':'text-muted'}">${esc(r.registration||'?')}</span>
+        ${r.result_as_of?`&middot; as of ${esc(r.result_as_of)}`:''}
+      </span>
+    </div>
+    <div class="card-body py-2">
+      <div class="mb-2"><strong>${esc(r.question)}</strong></div>
+      <div class="small text-muted mb-1"><em>Bar, frozen at registration:</em>
+        <span class="mono">${esc(r.yes_bar||'—')}</span></div>
+      ${r.result ? `<div class="small mt-2"><em class="text-muted">Result:</em> ${esc(r.result)}</div>` : ''}
+      ${r.note ? `<div class="small text-muted mt-2"><em>Note:</em> ${esc(r.note)}</div>` : ''}
+    </div>
+  </div>`;
+}
+
+async function loadAnswers(){
+  let d; try { d = await getJSON('/api/answers'); } catch(e){ return; }
+  setSourcePills(d);
+
+  const age = d.age_days!=null ? `${fmt(d.age_days,1)} days old` : 'age unknown';
+  $('rlSummary').innerHTML =
+    `<span class="badge ${d.stale?'bg-orange':'bg-secondary'}">${d.stale?'STALE':'current'}</span> `
+    + `${esc(age)} &middot; <strong>${d.n_questions||0}</strong> questions &middot; `
+    + `<strong>${d.n_prereg||0}</strong> pre-registered &middot; `
+    + `<strong>${d.n_no||0}</strong> answered NO &middot; `
+    + `<strong>${d.n_open||0}</strong> still open`;
+
+  const counts = d.counts||{};
+  $('rlCounts').innerHTML = Object.keys(counts).sort().map(k=>
+    `${statusBadge(k)} <span class="text-muted small me-3">${counts[k]}</span>`).join(' ');
+
+  const rows = d.rows||[];
+  const buckets = {};
+  rows.forEach(r=>{ (buckets[r.bucket] = buckets[r.bucket] || []).push(r); });
+  $('rlGroups').innerHTML = ['settled','provisional','open','other']
+    .filter(b=>buckets[b] && buckets[b].length)
+    .map(b=>`<h2 class="mt-3 mb-2 text-muted fs-3">${BUCKET_TITLE[b]}
+              <span class="fs-5">(${buckets[b].length})</span></h2>`
+            + buckets[b].map(card).join(''))
+    .join('') || `<div class="text-muted">${esc(d.note||'no questions in ledger')}</div>`;
+}
+loadAnswers();
+setInterval(loadAnswers, 120000);
+</script>
+{% endblock %}

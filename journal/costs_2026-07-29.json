@@ -1,0 +1,840 @@
+{
+  "as_of": "2026-07-29",
+  "quote_report_as_of": "2026-07-29",
+  "feed": "iex",
+  "flat_assumption_per_side": 0.0005,
+  "fit": {
+    "slope": -0.1286187366153683,
+    "intercept": -7.014738969018542,
+    "r2": 0.5806058504362666,
+    "n": 20,
+    "symbols": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "TIP",
+      "LQD",
+      "IEF",
+      "TLT",
+      "HYG",
+      "EEM",
+      "FXE",
+      "XLF",
+      "FXB",
+      "FXY",
+      "FXI",
+      "USO",
+      "FXC",
+      "UUP",
+      "GLD",
+      "VIXY",
+      "CPER"
+    ],
+    "resid_sd_log": 0.5483268245756695
+  },
+  "n_symbols": 87,
+  "by_source": {
+    "measured": {
+      "count": 21,
+      "median": 0.9282986036339546
+    },
+    "predicted": {
+      "count": 66,
+      "median": 0.744207170216886
+    }
+  },
+  "median_bps": 0.7606907014734151,
+  "median_vs_flat": 0.15213814029468303,
+  "n_cheaper_than_flat": 86,
+  "table": [
+    {
+      "symbol": "BTC",
+      "half_spread": 2e-05,
+      "bps": 0.2,
+      "source": "predicted",
+      "stress_bps": 0.3460710812591961,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.04
+    },
+    {
+      "symbol": "SPY",
+      "half_spread": 2.2655147602923566e-05,
+      "bps": 0.22655147602923564,
+      "source": "measured",
+      "stress_bps": 1.8449102056516318,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.04531029520584713
+    },
+    {
+      "symbol": "QQQ",
+      "half_spread": 3.39265249854942e-05,
+      "bps": 0.339265249854942,
+      "source": "measured",
+      "stress_bps": 1.9867671718240276,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.0678530499709884
+    },
+    {
+      "symbol": "IWM",
+      "half_spread": 3.899724983903961e-05,
+      "bps": 0.3899724983903961,
+      "source": "measured",
+      "stress_bps": 0.7503332719401318,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.07799449967807923
+    },
+    {
+      "symbol": "TIP",
+      "half_spread": 4.5159036988861585e-05,
+      "bps": 0.45159036988861584,
+      "source": "measured",
+      "stress_bps": 0.8975051170157731,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.09031807397772317
+    },
+    {
+      "symbol": "LQD",
+      "half_spread": 4.5427867184772176e-05,
+      "bps": 0.45427867184772175,
+      "source": "measured",
+      "stress_bps": 0.9017573009125063,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.09085573436954435
+    },
+    {
+      "symbol": "IEF",
+      "half_spread": 5.201880042359668e-05,
+      "bps": 0.5201880042359668,
+      "source": "measured",
+      "stress_bps": 0.5242208859828238,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.10403760084719336
+    },
+    {
+      "symbol": "BIL",
+      "half_spread": 5.464182285123827e-05,
+      "bps": 0.5464182285123828,
+      "source": "measured",
+      "stress_bps": 0.5464182285123828,
+      "n_sessions": 1.0,
+      "vs_flat_5bps": 0.10928364570247655
+    },
+    {
+      "symbol": "TLT",
+      "half_spread": 5.722227660345636e-05,
+      "bps": 0.5722227660345636,
+      "source": "measured",
+      "stress_bps": 1.1176030377918331,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.11444455320691273
+    },
+    {
+      "symbol": "EFA",
+      "half_spread": 6.01145008673428e-05,
+      "bps": 0.601145008673428,
+      "source": "predicted",
+      "stress_bps": 1.0401945157259103,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.12022900173468559
+    },
+    {
+      "symbol": "XLE",
+      "half_spread": 6.06434546229766e-05,
+      "bps": 0.606434546229766,
+      "source": "predicted",
+      "stress_bps": 1.0493472956333254,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1212869092459532
+    },
+    {
+      "symbol": "GOLD",
+      "half_spread": 6.064504293047989e-05,
+      "bps": 0.6064504293047989,
+      "source": "predicted",
+      "stress_bps": 1.0493747789980772,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.12129008586095978
+    },
+    {
+      "symbol": "DIA",
+      "half_spread": 6.165250839599377e-05,
+      "bps": 0.6165250839599378,
+      "source": "predicted",
+      "stress_bps": 1.0668075121471616,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.12330501679198755
+    },
+    {
+      "symbol": "HYG",
+      "half_spread": 6.219292340765221e-05,
+      "bps": 0.6219292340765221,
+      "source": "measured",
+      "stress_bps": 1.23289427593397,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.12438584681530442
+    },
+    {
+      "symbol": "XLV",
+      "half_spread": 6.233437431577319e-05,
+      "bps": 0.6233437431577319,
+      "source": "predicted",
+      "stress_bps": 1.0786062159537544,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.12466874863154638
+    },
+    {
+      "symbol": "XLK",
+      "half_spread": 6.247532233903051e-05,
+      "bps": 0.624753223390305,
+      "source": "predicted",
+      "stress_bps": 1.0810451176942548,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.12495064467806101
+    },
+    {
+      "symbol": "XLI",
+      "half_spread": 6.273012731201819e-05,
+      "bps": 0.6273012731201819,
+      "source": "predicted",
+      "stress_bps": 1.0854541493198582,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.12546025462403637
+    },
+    {
+      "symbol": "GDX",
+      "half_spread": 6.349011088085195e-05,
+      "bps": 0.6349011088085195,
+      "source": "predicted",
+      "stress_bps": 1.0986045660901342,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1269802217617039
+    },
+    {
+      "symbol": "SMH",
+      "half_spread": 6.370111003130176e-05,
+      "bps": 0.6370111003130176,
+      "source": "predicted",
+      "stress_bps": 1.1022556012971811,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.12740222006260352
+    },
+    {
+      "symbol": "XLU",
+      "half_spread": 6.386698710200422e-05,
+      "bps": 0.6386698710200422,
+      "source": "predicted",
+      "stress_bps": 1.1051258641578867,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.12773397420400845
+    },
+    {
+      "symbol": "EWZ",
+      "half_spread": 6.452653560040823e-05,
+      "bps": 0.6452653560040823,
+      "source": "predicted",
+      "stress_bps": 1.1165383972571643,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.12905307120081647
+    },
+    {
+      "symbol": "XLP",
+      "half_spread": 6.452876913967613e-05,
+      "bps": 0.6452876913967613,
+      "source": "predicted",
+      "stress_bps": 1.1165770454246382,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.12905753827935226
+    },
+    {
+      "symbol": "XLY",
+      "half_spread": 6.611193595608403e-05,
+      "bps": 0.6611193595608403,
+      "source": "predicted",
+      "stress_bps": 1.1439714580230362,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.13222387191216806
+    },
+    {
+      "symbol": "VTI",
+      "half_spread": 6.61838391406119e-05,
+      "bps": 0.661838391406119,
+      "source": "predicted",
+      "stress_bps": 1.1452156386638133,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.13236767828122378
+    },
+    {
+      "symbol": "XBI",
+      "half_spread": 6.625368510495507e-05,
+      "bps": 0.6625368510495507,
+      "source": "predicted",
+      "stress_bps": 1.146424222083905,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.13250737020991013
+    },
+    {
+      "symbol": "AGG",
+      "half_spread": 6.649314698287802e-05,
+      "bps": 0.6649314698287802,
+      "source": "predicted",
+      "stress_bps": 1.1505677636345624,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.13298629396575604
+    },
+    {
+      "symbol": "XOP",
+      "half_spread": 6.754831463220616e-05,
+      "bps": 0.6754831463220616,
+      "source": "predicted",
+      "stress_bps": 1.1688259141001982,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.13509662926441232
+    },
+    {
+      "symbol": "KRE",
+      "half_spread": 6.84511186709179e-05,
+      "bps": 0.684511186709179,
+      "source": "predicted",
+      "stress_bps": 1.1844476325923052,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1369022373418358
+    },
+    {
+      "symbol": "EMB",
+      "half_spread": 6.945859993972553e-05,
+      "bps": 0.6945859993972553,
+      "source": "predicted",
+      "stress_bps": 1.2018806391945374,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.13891719987945106
+    },
+    {
+      "symbol": "XLB",
+      "half_spread": 7.024223234645263e-05,
+      "bps": 0.7024223234645264,
+      "source": "predicted",
+      "stress_bps": 1.215440264909827,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.14048446469290526
+    },
+    {
+      "symbol": "MDY",
+      "half_spread": 7.066632262383775e-05,
+      "bps": 0.7066632262383775,
+      "source": "predicted",
+      "stress_bps": 1.222778533952136,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1413326452476755
+    },
+    {
+      "symbol": "VNQ",
+      "half_spread": 7.073858473962539e-05,
+      "bps": 0.7073858473962539,
+      "source": "predicted",
+      "stress_bps": 1.2240289253793715,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.14147716947925076
+    },
+    {
+      "symbol": "EWJ",
+      "half_spread": 7.09161760439179e-05,
+      "bps": 0.709161760439179,
+      "source": "predicted",
+      "stress_bps": 1.2271018861143084,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1418323520878358
+    },
+    {
+      "symbol": "SLV",
+      "half_spread": 7.137041281317968e-05,
+      "bps": 0.7137041281317968,
+      "source": "predicted",
+      "stress_bps": 1.2349617966086137,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.14274082562635937
+    },
+    {
+      "symbol": "GDXJ",
+      "half_spread": 7.168294538648144e-05,
+      "bps": 0.7168294538648144,
+      "source": "predicted",
+      "stress_bps": 1.240369720887177,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.14336589077296288
+    },
+    {
+      "symbol": "IWF",
+      "half_spread": 7.183405672628933e-05,
+      "bps": 0.7183405672628933,
+      "source": "predicted",
+      "stress_bps": 1.242984484125069,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.14366811345257866
+    },
+    {
+      "symbol": "XLC",
+      "half_spread": 7.248544953542286e-05,
+      "bps": 0.7248544953542286,
+      "source": "predicted",
+      "stress_bps": 1.2542558948141342,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.14497089907084573
+    },
+    {
+      "symbol": "RSP",
+      "half_spread": 7.281314088233368e-05,
+      "bps": 0.7281314088233368,
+      "source": "predicted",
+      "stress_bps": 1.2599261197513698,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.14562628176466735
+    },
+    {
+      "symbol": "IWD",
+      "half_spread": 7.290126030964141e-05,
+      "bps": 0.7290126030964141,
+      "source": "predicted",
+      "stress_bps": 1.261450899025786,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1458025206192828
+    },
+    {
+      "symbol": "KWEB",
+      "half_spread": 7.329906487984831e-05,
+      "bps": 0.7329906487984831,
+      "source": "predicted",
+      "stress_bps": 1.2683343319128535,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1465981297596966
+    },
+    {
+      "symbol": "XRT",
+      "half_spread": 7.361704989009447e-05,
+      "bps": 0.7361704989009447,
+      "source": "predicted",
+      "stress_bps": 1.2738366027288588,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.14723409978018892
+    },
+    {
+      "symbol": "OIL",
+      "half_spread": 7.395246608546514e-05,
+      "bps": 0.7395246608546514,
+      "source": "predicted",
+      "stress_bps": 1.2796404949990476,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1479049321709303
+    },
+    {
+      "symbol": "SHY",
+      "half_spread": 7.488896795791204e-05,
+      "bps": 0.7488896795791204,
+      "source": "predicted",
+      "stress_bps": 1.2958453057789956,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.14977793591582408
+    },
+    {
+      "symbol": "EWY",
+      "half_spread": 7.606907014734151e-05,
+      "bps": 0.7606907014734151,
+      "source": "predicted",
+      "stress_bps": 1.3162652678136055,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.15213814029468303
+    },
+    {
+      "symbol": "VGK",
+      "half_spread": 7.678868432986197e-05,
+      "bps": 0.7678868432986197,
+      "source": "predicted",
+      "stress_bps": 1.328717150725321,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.15357736865972393
+    },
+    {
+      "symbol": "USMV",
+      "half_spread": 7.754891025390232e-05,
+      "bps": 0.7754891025390231,
+      "source": "predicted",
+      "stress_bps": 1.3418717611020166,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.15509782050780463
+    },
+    {
+      "symbol": "MUB",
+      "half_spread": 7.778024513825962e-05,
+      "bps": 0.7778024513825962,
+      "source": "predicted",
+      "stress_bps": 1.345874676780142,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.15556049027651922
+    },
+    {
+      "symbol": "XLRE",
+      "half_spread": 7.811886359651526e-05,
+      "bps": 0.7811886359651526,
+      "source": "predicted",
+      "stress_bps": 1.3517339795792844,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.15623772719303053
+    },
+    {
+      "symbol": "EWT",
+      "half_spread": 7.89670778005819e-05,
+      "bps": 0.789670778005819,
+      "source": "predicted",
+      "stress_bps": 1.366411099916322,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1579341556011638
+    },
+    {
+      "symbol": "IWN",
+      "half_spread": 7.959116327334309e-05,
+      "bps": 0.7959116327334309,
+      "source": "predicted",
+      "stress_bps": 1.377209996634153,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.15918232654668618
+    },
+    {
+      "symbol": "INDA",
+      "half_spread": 7.997421325576113e-05,
+      "bps": 0.7997421325576113,
+      "source": "predicted",
+      "stress_bps": 1.3838381227137395,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.15994842651152225
+    },
+    {
+      "symbol": "XHB",
+      "half_spread": 7.999742198351696e-05,
+      "bps": 0.7999742198351696,
+      "source": "predicted",
+      "stress_bps": 1.384239716189195,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.15999484396703392
+    },
+    {
+      "symbol": "SPLV",
+      "half_spread": 8.076800023084887e-05,
+      "bps": 0.8076800023084887,
+      "source": "predicted",
+      "stress_bps": 1.3975734585516435,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.16153600046169772
+    },
+    {
+      "symbol": "XME",
+      "half_spread": 8.202884446403794e-05,
+      "bps": 0.8202884446403794,
+      "source": "predicted",
+      "stress_bps": 1.4193905449056017,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.16405768892807587
+    },
+    {
+      "symbol": "QUAL",
+      "half_spread": 8.211171144980028e-05,
+      "bps": 0.8211171144980027,
+      "source": "predicted",
+      "stress_bps": 1.4208244382737747,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.16422342289960054
+    },
+    {
+      "symbol": "EWW",
+      "half_spread": 8.214446892306534e-05,
+      "bps": 0.8214446892306534,
+      "source": "predicted",
+      "stress_bps": 1.4213912589833828,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1642889378461307
+    },
+    {
+      "symbol": "BNDX",
+      "half_spread": 8.249336422875966e-05,
+      "bps": 0.8249336422875966,
+      "source": "predicted",
+      "stress_bps": 1.4274283877677774,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.16498672845751933
+    },
+    {
+      "symbol": "IWO",
+      "half_spread": 8.264070279517832e-05,
+      "bps": 0.8264070279517832,
+      "source": "predicted",
+      "stress_bps": 1.4299778686173616,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.16528140559035664
+    },
+    {
+      "symbol": "MTUM",
+      "half_spread": 8.318208506768967e-05,
+      "bps": 0.8318208506768967,
+      "source": "predicted",
+      "stress_bps": 1.4393457060384898,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.16636417013537935
+    },
+    {
+      "symbol": "UNG",
+      "half_spread": 8.526487745415347e-05,
+      "bps": 0.8526487745415348,
+      "source": "predicted",
+      "stress_bps": 1.4753854166995872,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.17052975490830694
+    },
+    {
+      "symbol": "EWG",
+      "half_spread": 8.613301168068968e-05,
+      "bps": 0.8613301168068969,
+      "source": "predicted",
+      "stress_bps": 1.4904072242223623,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.17226602336137936
+    },
+    {
+      "symbol": "EEM",
+      "half_spread": 8.656629637317193e-05,
+      "bps": 0.8656629637317194,
+      "source": "measured",
+      "stress_bps": 1.2190358772223593,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.17313259274634385
+    },
+    {
+      "symbol": "EWH",
+      "half_spread": 8.670185939927583e-05,
+      "bps": 0.8670185939927584,
+      "source": "predicted",
+      "stress_bps": 1.5002503114745092,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.17340371879855165
+    },
+    {
+      "symbol": "EWC",
+      "half_spread": 8.76714144634162e-05,
+      "bps": 0.8767141446341621,
+      "source": "predicted",
+      "stress_bps": 1.5170270599438784,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1753428289268324
+    },
+    {
+      "symbol": "EWU",
+      "half_spread": 8.857544687652329e-05,
+      "bps": 0.8857544687652329,
+      "source": "predicted",
+      "stress_bps": 1.532670033678745,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.17715089375304657
+    },
+    {
+      "symbol": "EWA",
+      "half_spread": 9.194939999838882e-05,
+      "bps": 0.9194939999838881,
+      "source": "predicted",
+      "stress_bps": 1.5910514139288372,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.18389879999677763
+    },
+    {
+      "symbol": "FXE",
+      "half_spread": 9.282986036339545e-05,
+      "bps": 0.9282986036339546,
+      "source": "measured",
+      "stress_bps": 0.9340557023151105,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.1856597207267909
+    },
+    {
+      "symbol": "ITA",
+      "half_spread": 9.371418788850417e-05,
+      "bps": 0.9371418788850417,
+      "source": "predicted",
+      "stress_bps": 1.621588516595105,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.18742837577700833
+    },
+    {
+      "symbol": "VLUE",
+      "half_spread": 9.427281905225355e-05,
+      "bps": 0.9427281905225354,
+      "source": "predicted",
+      "stress_bps": 1.6312548211382965,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.18854563810450709
+    },
+    {
+      "symbol": "XLF",
+      "half_spread": 9.452883896700785e-05,
+      "bps": 0.9452883896700784,
+      "source": "measured",
+      "stress_bps": 0.9980648951474271,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.18905767793401568
+    },
+    {
+      "symbol": "ILF",
+      "half_spread": 9.553644892812563e-05,
+      "bps": 0.9553644892812563,
+      "source": "predicted",
+      "stress_bps": 1.6531201090110201,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.19107289785625126
+    },
+    {
+      "symbol": "IYT",
+      "half_spread": 9.561084034841023e-05,
+      "bps": 0.9561084034841023,
+      "source": "predicted",
+      "stress_bps": 1.654407344973735,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.19122168069682047
+    },
+    {
+      "symbol": "VPL",
+      "half_spread": 9.841447377076272e-05,
+      "bps": 0.9841447377076271,
+      "source": "predicted",
+      "stress_bps": 1.7029201674701322,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.19682894754152544
+    },
+    {
+      "symbol": "DBC",
+      "half_spread": 9.990207078662144e-05,
+      "bps": 0.9990207078662144,
+      "source": "predicted",
+      "stress_bps": 1.7286608828579415,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.1998041415732429
+    },
+    {
+      "symbol": "EWS",
+      "half_spread": 0.0001092853903397486,
+      "bps": 1.092853903397486,
+      "source": "predicted",
+      "stress_bps": 1.891025660035505,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.2185707806794972
+    },
+    {
+      "symbol": "DBA",
+      "half_spread": 0.000112767914884213,
+      "bps": 1.12767914884213,
+      "source": "predicted",
+      "stress_bps": 1.9512857117662292,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.22553582976842598
+    },
+    {
+      "symbol": "FXB",
+      "half_spread": 0.00011745484609874581,
+      "bps": 1.1745484609874581,
+      "source": "measured",
+      "stress_bps": 2.9178134391716424,
+      "n_sessions": 10.0,
+      "vs_flat_5bps": 0.2349096921974916
+    },
+    {
+      "symbol": "FXY",
+      "half_spread": 0.0001239955643225404,
+      "bps": 1.239955643225404,
+      "source": "measured",
+      "stress_bps": 1.7402118270691558,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.24799112864508077
+    },
+    {
+      "symbol": "FXI",
+      "half_spread": 0.00013046386362892194,
+      "bps": 1.3046386362892195,
+      "source": "measured",
+      "stress_bps": 1.440085566587124,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.2609277272578439
+    },
+    {
+      "symbol": "USO",
+      "half_spread": 0.00013571543313838617,
+      "bps": 1.3571543313838617,
+      "source": "measured",
+      "stress_bps": 152.59463600070984,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.2714308662767723
+    },
+    {
+      "symbol": "COPPER",
+      "half_spread": 0.00014647303338909343,
+      "bps": 1.4647303338909343,
+      "source": "predicted",
+      "stress_bps": 2.534504052013895,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.29294606677818685
+    },
+    {
+      "symbol": "BTCUSD",
+      "half_spread": 0.00016996268978018415,
+      "bps": 1.6996268978018416,
+      "source": "predicted",
+      "stress_bps": 2.9409585912974827,
+      "n_sessions": NaN,
+      "vs_flat_5bps": 0.3399253795603683
+    },
+    {
+      "symbol": "FXC",
+      "half_spread": 0.00017628863132664158,
+      "bps": 1.7628863132664156,
+      "source": "measured",
+      "stress_bps": 2.8053810431082495,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.35257726265328315
+    },
+    {
+      "symbol": "UUP",
+      "half_spread": 0.00018014793160089988,
+      "bps": 1.8014793160089988,
+      "source": "measured",
+      "stress_bps": 1.8301611154737825,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.36029586320179974
+    },
+    {
+      "symbol": "GLD",
+      "half_spread": 0.00025648367128043467,
+      "bps": 2.5648367128043468,
+      "source": "measured",
+      "stress_bps": 4.713818551789185,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.5129673425608693
+    },
+    {
+      "symbol": "VIXY",
+      "half_spread": 0.0003532969514236275,
+      "bps": 3.532969514236275,
+      "source": "measured",
+      "stress_bps": 5.130182788347041,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 0.706593902847255
+    },
+    {
+      "symbol": "CPER",
+      "half_spread": 0.0005752731268050412,
+      "bps": 5.752731268050413,
+      "source": "measured",
+      "stress_bps": 9.711735827236874,
+      "n_sessions": 12.0,
+      "vs_flat_5bps": 1.1505462536100826
+    }
+  ],
+  "caveats": [
+    "QUOTED half-spread only -- market impact is not measured. This is a FLOOR on true cost, and an edge that is a small multiple of it is not proven tradable at size.",
+    "measured values come from the IEX feed (one venue, small volume share) so they OVERSTATE true NBBO spreads -- a conservative direction for a cost test.",
+    "predicted values are a log-log fit on dollar volume, not measurements; the `source` column says which is which and must be carried into any verdict that uses them.",
+    "this is a per-symbol LEVEL from 12 sampled sessions in 2025-2026. It is not a daily series and it does not price 2020-style stress -- use stress=True (p90) before trusting a marginal edge."
+  ]
+}

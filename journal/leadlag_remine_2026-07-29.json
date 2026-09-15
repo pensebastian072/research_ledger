@@ -1,0 +1,93 @@
+{
+  "question": "Q-REL-01",
+  "as_of": "2026-07-29",
+  "universe": 84,
+  "rows": 2511,
+  "date_range": [
+    "2016-08-02",
+    "2026-07-29"
+  ],
+  "lags": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "unfiltered": {
+    "n_tests": 28224,
+    "bonferroni_alpha": 1.7715419501133788e-06,
+    "n_survivors": 5,
+    "n_targets": 84,
+    "n_leaders": 84
+  },
+  "filtered": {
+    "n_tests": 20832,
+    "bonferroni_alpha": 2.400153609831029e-06,
+    "n_survivors": 0,
+    "n_targets": 62,
+    "n_leaders": 84
+  },
+  "unfiltered_top": [
+    {
+      "leader": "QUAL",
+      "target": "INDA",
+      "lag": 1,
+      "corr_discovery": -0.1717,
+      "corr_validation": -0.1707,
+      "corr_holdout": -0.0906,
+      "shrink_disc_to_holdout": 0.528,
+      "target_non_us_underlying": true
+    },
+    {
+      "leader": "SPY",
+      "target": "INDA",
+      "lag": 1,
+      "corr_discovery": -0.1714,
+      "corr_validation": -0.1904,
+      "corr_holdout": -0.0821,
+      "shrink_disc_to_holdout": 0.479,
+      "target_non_us_underlying": true
+    },
+    {
+      "leader": "VTI",
+      "target": "INDA",
+      "lag": 1,
+      "corr_discovery": -0.1689,
+      "corr_validation": -0.1866,
+      "corr_holdout": -0.0802,
+      "shrink_disc_to_holdout": 0.475,
+      "target_non_us_underlying": true
+    },
+    {
+      "leader": "DIA",
+      "target": "INDA",
+      "lag": 1,
+      "corr_discovery": -0.1882,
+      "corr_validation": -0.1946,
+      "corr_holdout": -0.0623,
+      "shrink_disc_to_holdout": 0.331,
+      "target_non_us_underlying": true
+    },
+    {
+      "leader": "VLUE",
+      "target": "INDA",
+      "lag": 1,
+      "corr_discovery": -0.1742,
+      "corr_validation": -0.1947,
+      "corr_holdout": -0.0527,
+      "shrink_disc_to_holdout": 0.303,
+      "target_non_us_underlying": true
+    }
+  ],
+  "artifact_share_non_us_targets": 1.0,
+  "n_non_us_targets_in_unfiltered": 5,
+  "graded": [],
+  "n_survive_everything": 0,
+  "verdict": "NO",
+  "caveats": [
+    "the original miner validated on halves with a |corr|>0.05 floor and no PnL step; this uses thirds, a block bootstrap, and requires the gate. It is a STRICTER test of the same claim, not a new search.",
+    "n_trials for the deflated Sharpe is the full test count of the filtered scan, so the multiple-comparison cost of mining is charged to every survivor.",
+    "the region filter removes the stale-NAV channel by excluding targets whose underlying market is shut during US hours. It does not claim that channel is unreal -- only that it is microstructure, already arbitraged in the ETF premium/discount, and not a macro relationship.",
+    "correlation is measured on returns of a fixed present-day universe; delisted names are absent, so this inherits a survivorship tilt."
+  ]
+}

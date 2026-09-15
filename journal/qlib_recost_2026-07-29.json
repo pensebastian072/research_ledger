@@ -1,0 +1,319 @@
+{
+  "question": "Q-QLIB-03",
+  "as_of": "2026-07-29",
+  "n_symbols": 76,
+  "cost_sources": {
+    "predicted": 64,
+    "measured": 12
+  },
+  "median_cost_bps": 0.731,
+  "rows": [
+    {
+      "label": "long_short@median",
+      "horizon": 5,
+      "n": 353,
+      "n_clusters": 353,
+      "mean_bps": 4.672,
+      "t_nw": 0.394,
+      "hit_rate": 0.4759,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.9057,
+        "dsr_shipped": -24.0752,
+        "pbo": 0.3175,
+        "profit_factor": 1.0576
+      },
+      "verdict": "NO",
+      "why": "t=0.394 <= 2, gate: deflated_sharpe_ratio -0.9057 <= 0.0",
+      "stress": false,
+      "construction": "long_short"
+    },
+    {
+      "label": "long_rest@median",
+      "horizon": 5,
+      "n": 353,
+      "n_clusters": 353,
+      "mean_bps": 7.775,
+      "t_nw": 0.868,
+      "hit_rate": 0.5099,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.4329,
+        "dsr_shipped": -23.5687,
+        "pbo": 0.1984,
+        "profit_factor": 1.1266
+      },
+      "verdict": "NO",
+      "why": "t=0.868 <= 2, gate: deflated_sharpe_ratio -0.4329 <= 0.0",
+      "stress": false,
+      "construction": "long_rest"
+    },
+    {
+      "label": "long_only@median",
+      "horizon": 5,
+      "n": 353,
+      "n_clusters": 353,
+      "mean_bps": 8.14,
+      "t_nw": 1.016,
+      "hit_rate": 0.5127,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.2852,
+        "dsr_shipped": -23.4253,
+        "pbo": 0.1508,
+        "profit_factor": 1.1497
+      },
+      "verdict": "NO",
+      "why": "t=1.016 <= 2, gate: deflated_sharpe_ratio -0.2852 <= 0.0",
+      "stress": false,
+      "construction": "long_only"
+    },
+    {
+      "label": "long_short@median",
+      "horizon": 21,
+      "n": 84,
+      "n_clusters": 84,
+      "mean_bps": 19.02,
+      "t_nw": 0.398,
+      "hit_rate": 0.5357,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.9131,
+        "dsr_shipped": -11.2838,
+        "pbo": 0.2302,
+        "profit_factor": 1.1317
+      },
+      "verdict": "NO-DATA",
+      "why": "84 clusters, need 100",
+      "stress": false,
+      "construction": "long_short"
+    },
+    {
+      "label": "long_rest@median",
+      "horizon": 21,
+      "n": 84,
+      "n_clusters": 84,
+      "mean_bps": 20.576,
+      "t_nw": 0.498,
+      "hit_rate": 0.5714,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.8198,
+        "dsr_shipped": -11.0861,
+        "pbo": 0.1905,
+        "profit_factor": 1.1675
+      },
+      "verdict": "NO-DATA",
+      "why": "84 clusters, need 100",
+      "stress": false,
+      "construction": "long_rest"
+    },
+    {
+      "label": "long_only@median",
+      "horizon": 21,
+      "n": 84,
+      "n_clusters": 84,
+      "mean_bps": 19.594,
+      "t_nw": 0.53,
+      "hit_rate": 0.5714,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.7897,
+        "dsr_shipped": -11.0376,
+        "pbo": 0.1786,
+        "profit_factor": 1.1791
+      },
+      "verdict": "NO-DATA",
+      "why": "84 clusters, need 100",
+      "stress": false,
+      "construction": "long_only"
+    },
+    {
+      "label": "long_short@flat5bps",
+      "horizon": 5,
+      "n": 353,
+      "n_clusters": 353,
+      "mean_bps": -12.307,
+      "t_nw": -1.039,
+      "hit_rate": 0.4448,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -2.3258,
+        "dsr_shipped": -25.1807,
+        "pbo": 0.123,
+        "profit_factor": 0.8638
+      },
+      "verdict": "NO",
+      "why": "mean <= 0, t=-1.039 <= 2, gate: deflated_sharpe_ratio -2.3258 <= 0.0",
+      "stress": false,
+      "construction": "long_short"
+    },
+    {
+      "label": "long_short@flat5bps",
+      "horizon": 21,
+      "n": 84,
+      "n_clusters": 84,
+      "mean_bps": 2.044,
+      "t_nw": 0.043,
+      "hit_rate": 0.5119,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -1.258,
+        "dsr_shipped": -11.785,
+        "pbo": 0.373,
+        "profit_factor": 1.0134
+      },
+      "verdict": "NO-DATA",
+      "why": "84 clusters, need 100",
+      "stress": false,
+      "construction": "long_short"
+    },
+    {
+      "label": "long_short@stress",
+      "horizon": 5,
+      "n": 353,
+      "n_clusters": 353,
+      "mean_bps": 2.414,
+      "t_nw": 0.204,
+      "hit_rate": 0.4731,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -1.0967,
+        "dsr_shipped": -24.23,
+        "pbo": 0.4206,
+        "profit_factor": 1.0293
+      },
+      "verdict": "NO",
+      "why": "t=0.204 <= 2, gate: deflated_sharpe_ratio -1.0967 <= 0.0",
+      "stress": true,
+      "construction": "long_short"
+    },
+    {
+      "label": "long_rest@stress",
+      "horizon": 5,
+      "n": 353,
+      "n_clusters": 353,
+      "mean_bps": 5.512,
+      "t_nw": 0.615,
+      "hit_rate": 0.5014,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.6856,
+        "dsr_shipped": -23.8119,
+        "pbo": 0.2857,
+        "profit_factor": 1.0881
+      },
+      "verdict": "NO",
+      "why": "t=0.615 <= 2, gate: deflated_sharpe_ratio -0.6856 <= 0.0",
+      "stress": true,
+      "construction": "long_rest"
+    },
+    {
+      "label": "long_only@stress",
+      "horizon": 5,
+      "n": 353,
+      "n_clusters": 353,
+      "mean_bps": 6.996,
+      "t_nw": 0.873,
+      "hit_rate": 0.5099,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.428,
+        "dsr_shipped": -23.564,
+        "pbo": 0.1984,
+        "profit_factor": 1.1273
+      },
+      "verdict": "NO",
+      "why": "t=0.873 <= 2, gate: deflated_sharpe_ratio -0.428 <= 0.0",
+      "stress": true,
+      "construction": "long_only"
+    },
+    {
+      "label": "long_short@stress",
+      "horizon": 21,
+      "n": 84,
+      "n_clusters": 84,
+      "mean_bps": 16.757,
+      "t_nw": 0.35,
+      "hit_rate": 0.5119,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.9585,
+        "dsr_shipped": -11.3509,
+        "pbo": 0.2381,
+        "profit_factor": 1.1151
+      },
+      "verdict": "NO-DATA",
+      "why": "84 clusters, need 100",
+      "stress": true,
+      "construction": "long_short"
+    },
+    {
+      "label": "long_rest@stress",
+      "horizon": 21,
+      "n": 84,
+      "n_clusters": 84,
+      "mean_bps": 18.32,
+      "t_nw": 0.443,
+      "hit_rate": 0.5714,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.8713,
+        "dsr_shipped": -11.1689,
+        "pbo": 0.2024,
+        "profit_factor": 1.1479
+      },
+      "verdict": "NO-DATA",
+      "why": "84 clusters, need 100",
+      "stress": true,
+      "construction": "long_rest"
+    },
+    {
+      "label": "long_only@stress",
+      "horizon": 21,
+      "n": 84,
+      "n_clusters": 84,
+      "mean_bps": 18.458,
+      "t_nw": 0.499,
+      "hit_rate": 0.5714,
+      "gate": {
+        "passes": false,
+        "dsr_fixed": -0.8186,
+        "dsr_shipped": -11.0841,
+        "pbo": 0.1905,
+        "profit_factor": 1.1679
+      },
+      "verdict": "NO-DATA",
+      "why": "84 clusters, need 100",
+      "stress": true,
+      "construction": "long_only"
+    }
+  ],
+  "best": {
+    "label": "long_only@median",
+    "horizon": 5,
+    "n": 353,
+    "n_clusters": 353,
+    "mean_bps": 8.14,
+    "t_nw": 1.016,
+    "hit_rate": 0.5127,
+    "gate": {
+      "passes": false,
+      "dsr_fixed": -0.2852,
+      "dsr_shipped": -23.4253,
+      "pbo": 0.1508,
+      "profit_factor": 1.1497
+    },
+    "verdict": "NO",
+    "why": "t=1.016 <= 2, gate: deflated_sharpe_ratio -0.2852 <= 0.0",
+    "stress": false,
+    "construction": "long_only"
+  },
+  "verdict": "NO",
+  "caveats": [
+    "no model is re-fit -- this reuses the point-in-time score history and only changes what a trade is charged.",
+    "costs are QUOTED half-spreads with no market impact, so they are a floor; the @stress rows use the within-session p90 and are the honest test.",
+    "n_trials=6 (3 constructions x 2 horizons). The construction choice was pre-registered in questions.yaml before this ran, driven by the measured non-monotonic decile table, not by trying variants until one passed.",
+    "long_only is market-neutral by subtracting the cross-sectional mean, which is not the same as being dollar-neutral and would need a hedge in practice."
+  ]
+}
